@@ -10,4 +10,15 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+	$('.likeBtn').click(handlerFunction);
+	function handlerFunction(e){
+		ga("send", "event", "like", "click");
+	}
+
+
+	// $('.project a').click(function(e) {
+	// 	e.preventDefault();
+	// 	ga("send", "event", "like", "click");
+	// }
 }
+
